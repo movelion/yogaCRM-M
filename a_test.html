@@ -6,10 +6,10 @@
 <meta name="robots" content="nofollow" />
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" /> 
-<title>°ËÖ§è¤Ù¤»áÔ±ÔÚÏßÔ¼¿ÎÏµÍ³</title>
+<title>ç‘œä¼½ä¼šå‘˜åœ¨çº¿çº¦è¯¾ç³»ç»Ÿ</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<link rel="stylesheet" href="http://www.bazhiyoga.com/yueke/templates/m/base.css" />
+<link rel="stylesheet" href="/yueke/templates/m/base.css" />
 <style>
 .loadingAjaxWait_Event {color:#ccc;padding: 0px 0px;}
 
@@ -19,7 +19,7 @@
 
 .layer-bg {background-color: rgba(0,0,0,0.5);position: fixed;width: 100%;height: 100%;top: 0;bottom:0;left: 0;z-index: 9998;display: none;}
 .layer-box {display: none;background-color: #fff;position: fixed;width: 80%; height: 230px;left: 50%;top: 50%;margin-left: -40%;margin-top:-115px;z-index: 9999;border-radius: 10px;box-shadow: 0px 0px 5px #999;}
-.layer-box .close {background: url(http://www.bazhiyoga.com/yueke/templates/m/images/white_close.png) no-repeat;background-size: cover; position: absolute; width: 30px; height: 30px;top:3px;right:3px;border-radius: 10px;cursor: pointer;z-index: 9;}
+.layer-box .close {background: url(/yueke/templates/m/images/white_close.png) no-repeat;background-size: cover; position: absolute; width: 30px; height: 30px;top:3px;right:3px;border-radius: 10px;cursor: pointer;z-index: 9;}
 .layer-box .text {text-align: center; line-height: 36px;background:#FF7070; color: #fff;font-size: 16px;border-radius: 10px 10px 0 0;}
 .layer-box .cont {padding: 15px 20px;text-align: center;}
 .layer-box .cont .tit {font-size: 14px; border-bottom: 1px solid #ccc; text-align: center; padding-bottom: 3px; margin-bottom: 3px;}
@@ -32,39 +32,39 @@
 <div class="wrap clearfix">
    <button onclick="ajaxSearch('course',0,0)">course</button>
    <button onclick="ajaxSearch('teacher',0,0)">teacher</button>
-   <button id="refreshSubmit" class="f_R">Ë¢ĞÂ</button>
+   <button id="refreshSubmit" class="f_R">åˆ·æ–°</button>
    <div id="content"></div>
 </div>
 
 <div class="layer-bg clearfix"></div>
 <div class="layer-box clearfix">
           <div class="close closeAjax"></div>
-          <div class="text clearfix">´¦Àí½á¹û</div>
+          <div class="text clearfix">å¤„ç†ç»“æœ</div>
 
           <div class="cont clearfix">
-                   <div class="tit clearfix">È¡Ïû±¾´Î¿Î³Ì£¿</div>
+                   <div class="tit clearfix">å–æ¶ˆæœ¬æ¬¡è¯¾ç¨‹ï¼Ÿ</div>
                    <div class="conFix clearfix">
                          <select name="bz_class_delayReason_con" id="bz_class_delayReason_con" onblur="deleteSpace(this);">
-                               <option value="0">ÇëÑ¡ÔñÈ¡ÏûÔ­Òò</option>
-                               <option value="1">ÁÙÊ±ÓĞÊÂ£¬ÉÏ²»ÁË¡£</option>
-                               <option value="2">ÉíÌå²»ÊÊ£¬ÉÏ²»ÁË¡£</option>
-                               <option value="3">Ô¼´í¿ÎÁË£¬ÖØĞÂÔ¼¡£</option>
-                               <option value="4">Ã»Ô­Òò£¬²»ÏëÉÏÁË¡£</option>
-                               <option value="5">ÆäËüÔ­Òò£¬ÒªÊÖĞ´¡£</option>
+                               <option value="0">è¯·é€‰æ‹©å–æ¶ˆåŸå› </option>
+                               <option value="1">ä¸´æ—¶æœ‰äº‹ï¼Œä¸Šä¸äº†ã€‚</option>
+                               <option value="2">èº«ä½“ä¸é€‚ï¼Œä¸Šä¸äº†ã€‚</option>
+                               <option value="3">çº¦é”™è¯¾äº†ï¼Œé‡æ–°çº¦ã€‚</option>
+                               <option value="4">æ²¡åŸå› ï¼Œä¸æƒ³ä¸Šäº†ã€‚</option>
+                               <option value="5">å…¶å®ƒåŸå› ï¼Œè¦æ‰‹å†™ã€‚</option>
                          </select>
                          <span class="bz_Err" id="bz_class_delayReason_Err">*</span>
-                         <input style="display:none;margin-top: 5px;" type="text" name="bz_class_delayReason_text" id="bz_class_delayReason_text" placeholder="ÇëÌîĞ´È¡Ïû¿Î³ÌµÄÔ­Òò" value="" onblur="deleteSpaceLess(this);" />
+                         <input style="display:none;margin-top: 5px;" type="text" name="bz_class_delayReason_text" id="bz_class_delayReason_text" placeholder="è¯·å¡«å†™å–æ¶ˆè¯¾ç¨‹çš„åŸå› " value="" onblur="deleteSpaceLess(this);" />
                    </div>
                    <div class="conAjax clearfix"></div>
           </div>
           <div class="cont clearfix">
-                   <button class="btn">È·ÈÏĞŞ¸Ä</button>
-                   <button class="btn cancelBtn closeAjax">È¡ÏûĞŞ¸Ä</button>
+                   <button class="btn">ç¡®è®¤ä¿®æ”¹</button>
+                   <button class="btn cancelBtn closeAjax">å–æ¶ˆä¿®æ”¹</button>
           </div>
 </div>
 
 
-<script type="text/javascript" src="http://www.bazhiyoga.com/yueke/templates/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/yueke/templates/js/jquery-1.9.1.min.js"></script>
 <script>
 
 $(function(){
@@ -77,7 +77,7 @@ function ajaxSearch($dataName_value, $refresh_value, $id){
   var $_content = $("#content");
   var $_Refresh = $("#refreshSubmit");
   var $_this = $(this);
-  var $_path = "http://www.bazhiyoga.com/yueke/a_test.php?action=search&dataName="+$dataName_value+"&dataType=json&refresh="+$refresh_value+$_id_para+"&n="+ Math.random();
+  var $_path = "/yueke/a_test.php?action=search&dataName="+$dataName_value+"&dataType=json&refresh="+$refresh_value+$_id_para+"&n="+ Math.random();
       $.ajax({
          type:"GET",
          url:$_path,
@@ -86,7 +86,7 @@ function ajaxSearch($dataName_value, $refresh_value, $id){
          beforeSend: function (){
 		      $_this.unbind("click").addClass("loadingAjaxWait_Event");
 		      $_Refresh.unbind("click").addClass("loadingAjaxWait_Event");
-		      $_content.addClass("loadingAjaxWait").html("¼ÓÔØÖĞ¡­");
+		      $_content.addClass("loadingAjaxWait").html("åŠ è½½ä¸­â€¦");
          },
          success: function(o){ 
                       var $data_title='';
@@ -113,11 +113,11 @@ function ajaxSearch($dataName_value, $refresh_value, $id){
                           $data += "/" + item.count;
                           $data += "<br />";
                           if(item.order==1){
-                                $data += "<a class='orderConfirm' href='javascript:void(0)' onclick=\"ajaxOrder(this,'"+item.id+"',0)\">Ô¤Ô¼</a>";
-                                $data += "<a class='orderCancel' style='display:none;' href='javascript:void(0)' onclick=\"ajaxOrder(this,'"+item.id+"',1)\">È¡Ïû</a>";
+                                $data += "<a class='orderConfirm' href='javascript:void(0)' onclick=\"ajaxOrder(this,'"+item.id+"',0)\">é¢„çº¦</a>";
+                                $data += "<a class='orderCancel' style='display:none;' href='javascript:void(0)' onclick=\"ajaxOrder(this,'"+item.id+"',1)\">å–æ¶ˆ</a>";
                           }else{
-                                $data += "<a class='orderConfirm' href='javascript:void(0)'>ÒÑÔ¼</a>";
-                                $data += "<a class='orderCancel' href='javascript:void(0)' onclick=\"ajaxOrder(this,'"+item.id+"',1)\">È¡Ïû</a>";
+                                $data += "<a class='orderConfirm' href='javascript:void(0)'>å·²çº¦</a>";
+                                $data += "<a class='orderCancel' href='javascript:void(0)' onclick=\"ajaxOrder(this,'"+item.id+"',1)\">å–æ¶ˆ</a>";
                           }
                           $data += "</div>";
                       }else if($dataName_value == "teacher"){
@@ -127,7 +127,7 @@ function ajaxSearch($dataName_value, $refresh_value, $id){
                           $data += item.phone + " ";
                       }else if($dataName_value == "class"){
                           $data_title = "";
-                          $data_title += item.year + "Äê";
+                          $data_title += item.year + "å¹´";
                           $data_title += item.monthDay + " ";
                           $data_title += item.startTime + "-" + item.endTime;
                           $data_title += "  , ";
@@ -143,7 +143,7 @@ function ajaxSearch($dataName_value, $refresh_value, $id){
 
 
                           if(item.isCancel==1){
-                               $data += '<li><span style="color:#f00;">ÒÑÈ¡Ïû</span>';
+                               $data += '<li><span style="color:#f00;">å·²å–æ¶ˆ</span>';
                           }else{
                                $data += '<li>';
                           }
@@ -158,7 +158,7 @@ function ajaxSearch($dataName_value, $refresh_value, $id){
                                $data += item.memberPhone_1;
                           }
                           $data += "  , ";
-                          $data += "<a class='editClass' href='javascript:void(0)' onclick=\"layerShow_classEdit(this,'"+item.id+"','"+ item.isCancel +"')\">ĞŞ¸Ä</a>";
+                          $data += "<a class='editClass' href='javascript:void(0)' onclick=\"layerShow_classEdit(this,'"+item.id+"','"+ item.isCancel +"')\">ä¿®æ”¹</a>";
                       }
                       $data += '</li>';
                       }) // each end
@@ -189,7 +189,7 @@ function ajaxSearch($dataName_value, $refresh_value, $id){
          error: function (data){
 		      $_this.unbind("click").addClass("loadingAjaxWait_Event");
 		      $_Refresh.unbind("click").addClass("loadingAjaxWait_Event");
-                      $_content.removeClass("loadingAjaxWait").html("½á¹û: " + data.responseText);
+                      $_content.removeClass("loadingAjaxWait").html("ç»“æœ: " + data.responseText);
          }
       });
 
@@ -205,35 +205,35 @@ function ajaxOrder($this,$courseID,$courseCancel){
       var $courseCancel_para = '';
   }
   var $_this = $($this);
-  var $_path = "http://www.bazhiyoga.com/yueke/a_test.php?action=order&courseID="+$courseID+"&dataType=json&n="+ Math.random() + $courseCancel_para;
+  var $_path = "/yueke/a_test.php?action=order&courseID="+$courseID+"&dataType=json&n="+ Math.random() + $courseCancel_para;
       $.ajax({
          type:"GET",
          url:$_path,
          async:true,
          dataType: "json", 
          beforeSend: function (){
-		      $_this.removeAttr("onclick").addClass("loadingAjaxWait_Event").html("¼ÓÔØÖĞ¡­");
+		      $_this.removeAttr("onclick").addClass("loadingAjaxWait_Event").html("åŠ è½½ä¸­â€¦");
          },
          success: function(DATA){ 
 		      $_this.removeClass("loadingAjaxWait_Event").html(DATA.state);
-                      if(DATA.state=="Ô¼¿Î³É¹¦"){
+                      if(DATA.state=="çº¦è¯¾æˆåŠŸ"){
                           $_this.parents("li:first").find(".orderCancel").fadeIn(1000,function(event){
                                 if( $(this).attr("onclick") == undefined ){
-                                      $(this).attr("onclick","ajaxOrder(this,'"+$courseID+"',1)").text("È¡Ïû"); 
+                                      $(this).attr("onclick","ajaxOrder(this,'"+$courseID+"',1)").text("å–æ¶ˆ"); 
                                 }
                                 var $orderNum = $_this.parents("li:first").find(".orderNum");
                                 $orderNum.text( parseInt($orderNum.text())+1 );
                           });
                       }
-                      if( DATA.state=="ÒÑÔ¼" || DATA.state=="ÒÑ¾­È¡Ïû" ){
+                      if( DATA.state=="å·²çº¦" || DATA.state=="å·²ç»å–æ¶ˆ" ){
                           var $orderNum = $_this.parents("li:first").find(".orderNum");
                           if( DATA.courseNum !='' && DATA.courseNum!=parseInt($orderNum.text()) ){
                                 $orderNum.text(DATA.courseNum);
                           }
                       }
-                      if(DATA.state=="È¡Ïû³É¹¦"){
+                      if(DATA.state=="å–æ¶ˆæˆåŠŸ"){
                           $_this.fadeOut(1000,function(){
-                                $_this.parents("li:first").find(".orderConfirm").attr("onclick","ajaxOrder(this,'"+$courseID+"',0)").text("Ô¤Ô¼"); 
+                                $_this.parents("li:first").find(".orderConfirm").attr("onclick","ajaxOrder(this,'"+$courseID+"',0)").text("é¢„çº¦"); 
                                 var $orderNum = $_this.parents("li:first").find(".orderNum");
                                 $orderNum.text( parseInt($orderNum.text())-1 );
                           });
@@ -242,7 +242,7 @@ function ajaxOrder($this,$courseID,$courseCancel){
          complete: function(data){
          },
          error: function (data){
-		      $_this.removeAttr("onclick").html("½á¹û: " + data.responseText);
+		      $_this.removeAttr("onclick").html("ç»“æœ: " + data.responseText);
          }
       });
 
@@ -265,7 +265,7 @@ function layerShow_classEdit($this,$classID,$isCancel){
 		layerHide();
     	});
         var $info = '';
-        $info += 'ÒªĞŞ¸ÄµÄidÊÇ£º' + $classID;
+        $info += 'è¦ä¿®æ”¹çš„idæ˜¯ï¼š' + $classID;
 	$_layer_box.find(".conAjax").html($info);
 	//$_layer_box.find(".btn").attr("href",$url);
         $('body').css('overflow','hidden');
