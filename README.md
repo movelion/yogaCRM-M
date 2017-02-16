@@ -1,2 +1,2 @@
 # yogaCRM-M
-yogaCRM&amp;M
+bazhiyogaCRM&amp;M
